@@ -17,7 +17,7 @@ $VirtualHardDriveSize = 10GB
 $VirtualMachineMemory = 2GB
 $VirtualSwitchName = "vSwitch"
 $VirtualMachineLocation = "D:\VMs"
-$InstallationMediaLocation = "D:\media\ubuntu-16.04.2-server-amd64.iso"
+$InstallationMediaLocation = "D:\media\ubuntu-16.04.4-server-amd64.iso"
 $exportPath = "D:\frgnca\Documents\_fg\VM"
 ########################
 # Set internal variables
