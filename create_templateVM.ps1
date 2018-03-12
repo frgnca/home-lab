@@ -1,4 +1,4 @@
-﻿<#
+<#
   Copyright (c) 2017-2018 Francois Gendron <fg@frgn.ca>
   MIT License
 
@@ -20,8 +20,8 @@ $VirtualSwitchName = "vSwitch"
 # Set internal variables
 $currentFolder = (Resolve-Path .\).Path
 $InstallationMediaLocation = $currentFolder+"\ISOs\ubuntu-16.04.4-server-amd64.iso"
-$VirtualMachineLocation = $currentFolder+"\VMs"
 $exportPath = $currentFolder+"\Templates"
+$VirtualMachineLocation = $currentFolder+"\VMs"
 $VirtualMachineGeneration = 2
 $VirtualHardDriveLocation = "$VirtualMachineLocation\$VirtualMachineName\Virtual Hard Disks\VHD.vhdx"
 $displayRAMsizeGB = $VirtualMachineMemory / 1024 /1024 / 1024
