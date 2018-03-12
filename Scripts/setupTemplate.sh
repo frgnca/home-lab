@@ -1,6 +1,6 @@
 #!/bin/bash
-# Copyright (c) 2017 Francois Gendron <fg@frgn.ca>
-# GNU Affero General Public License v3.0
+# Copyright (c) 2017-2018 Francois Gendron <fg@frgn.ca>
+# MIT License
 
 # setupTemplate.sh
 # Shell script that modifies basic Ubuntu Server 16.04.02 template
