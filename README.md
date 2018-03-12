@@ -9,4 +9,5 @@
   Requirements:
   Hyper-V
   PuTTY
+  ubuntu-16.04.4-server-amd64.iso
 ```  
