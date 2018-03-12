@@ -1,6 +1,6 @@
 #!/bin/bash
-# Copyright (c) 2017 Francois Gendron <fg@frgn.ca>
-# GNU Affero General Public License v3.0
+# Copyright (c) 2017-2018 Francois Gendron <fg@frgn.ca>
+# MIT License
 
 # removeTemplateUser.sh
 # Shell script that removes template user and a call to itself in /etc/rc.local
