@@ -1,4 +1,4 @@
-﻿<#
+<#
   Copyright (c) 2017-2018 Francois Gendron <fg@frgn.ca>
   MIT License
 
@@ -17,16 +17,18 @@ $VirtualMachineName = "test1" # ToDo: test if already exists
 $VirtualHardDriveSize = 10GB #[10GB+] # ToDo: auto resize in ubuntu
 $VirtualMachineMemory = 2GB #[2GB+]
 $VirtualSwitchName = "vSwitch"
-$VirtualMachineLocation = "D:\VMs"
+
 $startAction = "StartIfRunning" #[Nothing, Start, StartIfRunning]
 $VirtualMachineIP = "192.168.1.31" # ToDo: Add dhcp posibility
 $VirtualMachineUser = "test"
 $templateVMName = "_template"
 ########################
 # Set internal variables
+$currentFolder = (Resolve-Path .\).Path
+$bashFolder = $currentFolder+"\Scripts"
+$templateFolder = $currentFolder+"\Templates"
+$VirtualMachineLocation = $currentFolder+"\VMs"
 $VirtualMachineGeneration = 2
-$templateFolder = "D:\frgnca\Documents\_fg\VM"
-$bashFolder = "D:\frgnca\Documents\_fg\Scripts\bash"
 $VirtualMachineFolder = "$VirtualMachineLocation\$VirtualMachineName"
 $SnapshotFolder = $VirtualMachineFolder+"\Snapshots"
 $VHDFolder = $VirtualMachineFolder+"\Virtual Hard Disks"
