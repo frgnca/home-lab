@@ -31,8 +31,8 @@ sudo apt-get -y upgrade > /dev/null 2>&1
 
 # Create shell script to remove template user and script call from /etc/rc.local
 echo "#!/bin/bash" > removeTemplateUser.sh
-echo "# Copyright (c) 2017 Francois Gendron <fg@frgn.ca>" >> removeTemplateUser.sh
-echo "# GNU Affero General Public License v3.0" >> removeTemplateUser.sh
+echo "# Copyright (c) 2017-2018 Francois Gendron <fg@frgn.ca>" >> removeTemplateUser.sh
+echo "# MIT License" >> removeTemplateUser.sh
 echo "" >> removeTemplateUser.sh
 echo "# removeTemplateUser.sh" >> removeTemplateUser.sh
 echo "# Shell script that removes template user and a call to itself in /etc/rc.local" >> removeTemplateUser.sh
