@@ -7,5 +7,6 @@
 
 
   Requirements:
-  Windows 10 Pro
+  Hyper-V
+  PuTTY
 ```  
