@@ -16,11 +16,12 @@ $VirtualMachineName = "_template"
 $VirtualHardDriveSize = 10GB
 $VirtualMachineMemory = 2GB
 $VirtualSwitchName = "vSwitch"
-$VirtualMachineLocation = "D:\VMs"
-$InstallationMediaLocation = "D:\media\ubuntu-16.04.4-server-amd64.iso"
-$exportPath = "D:\frgnca\Documents\_fg\VM"
 ########################
 # Set internal variables
+$currentFolder = (Resolve-Path .\).Path
+$InstallationMediaLocation = $currentFolder+"\ISOs\ubuntu-16.04.4-server-amd64.iso"
+$VirtualMachineLocation = $currentFolder+"\VMs"
+$exportPath = $currentFolder+"\Templates"
 $VirtualMachineGeneration = 2
 $VirtualHardDriveLocation = "$VirtualMachineLocation\$VirtualMachineName\Virtual Hard Disks\VHD.vhdx"
 $displayRAMsizeGB = $VirtualMachineMemory / 1024 /1024 / 1024
